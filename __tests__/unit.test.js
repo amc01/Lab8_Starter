@@ -3,9 +3,9 @@
 const functions = require('../code-to-unit-test/unit-test-me.js');
 
 test('isPhoneNumber(phoneNumber)', () => {
-    let number1 = "11234567899";
+    let number1 = "123 456-7899";
     expect(functions.isPhoneNumber(number1)).toBe(true);
-    let number2 = "15242357849";
+    let number2 = "524 235-7849";
     expect(functions.isPhoneNumber(number2)).toBe(true);
     let number3 = "12345678991234";
     expect(functions.isPhoneNumber(number3)).toBe(false);
@@ -36,9 +36,9 @@ test('isStrongPassword(password)', () => {
 });
 
 test('isDate(date)', () => {
-    let date1 = "01 / 11 / 2001";
+    let date1 = "01/11/2001";
     expect(functions.isDate(date1)).toBe(true);
-    let date2 = "12 / 21 / 1934";
+    let date2 = "12/21/1934";
     expect(functions.isDate(date2)).toBe(true);
     let date3 = "012 / 11 / 201";
     expect(functions.isDate(date3)).toBe(false);
