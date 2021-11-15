@@ -127,6 +127,7 @@ describe('Basic user flow for Website', () => {
     }
 
     expect(check).toBe(true);
+
     let cart = await page.$("#cart-count");
     let count = await cart.getProperty("innerHTML");
     let result = count['_remoteObject'].value;
@@ -198,6 +199,7 @@ describe('Basic user flow for Website', () => {
     }
 
     expect(check).toBe(true);
+    
     let cart = await page.$("#cart-count");
     let count = await cart.getProperty("innerHTML");
     let result = count['_remoteObject'].value;
